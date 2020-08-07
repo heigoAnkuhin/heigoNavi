@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="customGPS" parent="NavigationLocationLayerStyle">
+        <item name="mapbox_gpsDrawable">@mipmap/car_icon2_foreground</item>
+    </style>
+
+    <style name="NavigationMapRoute" parent="NavigationViewDark">
+        <!-- Main color for the route line -->
+        <item name="routeColor">#F10606</item>
+        <!-- Outline color for the route line -->
+        <item name="routeShieldColor">#EC7C1A</item>
+        <!-- Color for moderate traffic along the route line -->
+        <item name="routeModerateCongestionColor">#FFAB65</item>
+        <!-- Color for severe traffic along the route line -->
+        <item name="routeSevereCongestionColor">#E85552</item>
+        <item name="navigationViewMapStyle">mapbox://styles/heigoankuhin/ck6rlknjj0iz11iocc6dco3cq</item>
+        <item name="navigationViewLocationLayerStyle">@style/customGPS</item>
+        <!-- Scales -->
+        <item name="routeScale">1.0</item>
+    </style>
+    <style name="CustomNavigationViewLight" parent="@style/NavigationViewLight">
+        <!-- The main turn banner view at the top of the screen -->
+        <!-- Background color of the banner -->
+        <item name="navigationViewBannerBackground">#FFFFFF</item>
+        <!-- Color for the primary label that displays the turn name -->
+        <item name="navigationViewBannerPrimaryText">#D60F0F</item>
+        <!-- Color for the secondary label that occasionally appears underneath the primary label -->
+        <item name="navigationViewBannerSecondaryText">#D60F0F</item>
+        <!-- Primary color for the turn arrow icons-->
+        <item name="navigationViewBannerManeuverPrimary">#D60F0F</item>
+        <!-- Secondary color for the turn arrow icons (e.g. the line segment that forks off) -->
+        <item name="navigationViewBannerManeuverSecondary">#D60F0F</item>
+        <!-- Alternate background color for the dropdown list of upcoming steps -->
+        <item name="navigationViewListBackground">#FAFAFA</item>
+
+        <!-- The summary view along the bottom of the screen -->
+        <!-- Background color of the summary view -->
+        <item name="navigationViewPrimary">#FFFFFF</item>
+        <!-- Tint color for icons in the summary view -->
+        <item name="navigationViewSecondary">#28353D</item>
+        <!-- Accent color for elements such as the recenter button -->
+        <item name="navigationViewAccent">#4882C6</item>
+        <!-- Color for the main duration label in the summary view -->
+        <item name="navigationViewPrimaryText">#424242</item>
+        <!-- Color for the secondary distance and ETA label in the summary view -->
+        <item name="navigationViewSecondaryText">#424242</item>
+
+        <!-- Custom colors for progress bars displayed during navigation -->
+        <item name="navigationViewProgress">#4B75A4</item>
+        <item name="navigationViewProgressBackground">#39587B</item>
+
+        <!-- Custom colors for the route line and traffic -->
+        <item name="navigationViewRouteStyle">@style/NavigationMapRoute</item>
+
+        <!-- Map style -->
+    </style>
+
+</resources>

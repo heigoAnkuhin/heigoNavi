@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom|center|center_horizontal"
+            android:layout_marginHorizontal="40dp"
+            android:background="@color/backgroundGray"
+            android:enabled="false"
+            android:text="Go"
+            android:textColor="@color/textWhite" />
+
+        <ImageButton
+            android:id="@+id/menuDataView"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="start|bottom"
+            android:background="@color/buttonRed"
+            android:paddingHorizontal="15dp"
+            android:src="@drawable/ic_menu_black_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/autoComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_margin="16dp"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+</FrameLayout>
